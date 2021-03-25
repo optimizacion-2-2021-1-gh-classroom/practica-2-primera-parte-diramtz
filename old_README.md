@@ -70,6 +70,8 @@ Designen un horario en el mes de abril para que nos reunamos uds y yo y me muest
 
 # Notas
 
+* **De su práctica 1 deben utilizar los tres archivos que crearon para uso de *github actions*: el que automáticamente actualiza la documentación de su paquete, el que automáticamente construye la imagen de *docker* y la sube a su cuenta de *dockerhub*, el que automáticamente realiza *testing* para cambios en su paquete.**
+
 * **Para la entrega crear un archivo con nombre:** `reporte_equipo_<aquí colocar_número>_parte_1_practica_2.ipynb` que contiene ejecución del paquete para los ejemplos elegidos y es el que me mostrarán en la reunión. Este *notebook* debe tener la identificación de las celdas con el panel de kale para que si clono su repo y despliego su *notebook* con mi infraestructura de minikube y kubeflow entonces el despliegue del *pipeline* termina exitosamente sin hacer modificaciones al *notebook*. En la reunión uds levantan la infraestructura de *minikube* con *kubeflow* y lanzan su *pipeline* con kale.
 
 * Es muy importante la **experimentación** para resolver problemas en la ciencia. En esta práctica este es uno de los **objetivos** para robustecer sus implementaciones con ambientes controlados :)
