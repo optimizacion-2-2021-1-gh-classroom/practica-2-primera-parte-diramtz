@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: v1.2
 kind: PersistentVolumeClaim
 metadata:
   name: hostpath-pvc
