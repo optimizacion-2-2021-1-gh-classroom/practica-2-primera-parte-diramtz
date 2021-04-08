@@ -7,7 +7,7 @@ OPT_LOAD_BALANCER_SERVICE=loadbalancer-opt-0.1-hostpath-pv
 OPT_PV=hostpath-pv
 OPT_PVC=hostpath-pvc
 OPT_JUPYTERLAB_SERVICE=jupyterlab-opt-0.1-hostpath-pv
-OPT_URL=https://github.com/optimizacion-2-2021-1-gh-classroom/practica-2-primera-parte-diramtz/tree/kubeflow/deployments/minikube
+OPT_URL=https://raw.githubusercontent.com/optimizacion-2-2021-1-gh-classroom/practica-2-primera-parte-diramtz/tree/kubeflow/deployments/minikube
 ```
 
 Next lines are not necessary but help to modify services:
