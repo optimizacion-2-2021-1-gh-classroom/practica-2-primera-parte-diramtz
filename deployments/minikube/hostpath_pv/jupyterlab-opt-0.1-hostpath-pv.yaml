@@ -16,7 +16,7 @@ spec:
                         containers: 
                         - name: jupyterlab-opt-0-1-hostpath-pv
                           imagePullPolicy: Always
-                          image: diramtz/pkg:0.1
+                          image: palmoreck/kale_opt:0.1
                           ports:
                                   - containerPort: 8888
                           env:
