@@ -40,3 +40,4 @@ spec:
                         - name: hostpath-pv
                           persistentVolumeClaim:
                                   claimName: hostpath-pvc 
+
