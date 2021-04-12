@@ -3,7 +3,8 @@
 ### Primera Parte
 
 | Integrante | User | Tarea |
-|---------------|-------|---------|
+|------------|------|-------|
 | Ana | @AnaTorresR | (pendiente) |
 | Iván | @IvanSalgadoVel |  (pendiente) |
+| León | @lgarayva | (pendiente) |
 | Dira | @diramtz | (pendiente) |
