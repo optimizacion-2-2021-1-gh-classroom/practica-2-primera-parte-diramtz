@@ -10,15 +10,6 @@ OPT_JUPYTERLAB_SERVICE=jupyterlab-opt-0.1-hostpath-pv
 OPT_URL=https://raw.githubusercontent.com/optimizacion-2-2021-1-gh-classroom/practica-2-primera-parte-diramtz/kubeflow/deployments/minikube/
 ```
 
-Next lines are not necessary but help to modify services:
-
-```
-wget $OPT_URL/hostpath_pv/$OPT_LOAD_BALANCER_SERVICE.yaml
-wget $OPT_URL/hostpath_pv/$OPT_PV.yaml
-wget $OPT_URL/hostpath_pv/$OPT_PVC.yaml
-wget $OPT_URL/hostpath_pv/$OPT_JUPYTERLAB_SERVICE.yaml
-```
-
 Create storage:
 
 ```
