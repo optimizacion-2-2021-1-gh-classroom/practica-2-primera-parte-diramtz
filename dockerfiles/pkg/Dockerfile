@@ -1,13 +1,12 @@
-#dummy line
+#dummy line to trigger build
 FROM ubuntu:bionic
 USER root
 ENV TIMEZONE America/Mexico_City
-ENV JUPYTERLAB_VERSION 3.0.0
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
-
-ENV DEB_PACKAGES="sudo nano less git wget curl python3-dev python3-pip python3-setuptools nodejs"
 ENV DEBIAN_FRONTEND noninteractive 
+ENV DEB_BUILD_DEPS="sudo nano less git wget curl python3-dev python3-pip python3-setuptools"
+ENV DEB_PACKAGES=""
 ENV PIP_PACKAGES_COMMON=""
 ENV PIP_PACKAGES_KALE="kubeflow-kale==0.6.1"
 
@@ -30,9 +29,8 @@ RUN jupyter notebook --generate-config && \
 RUN pip install $PIP_PACKAGES_KALE --upgrade
 RUN jupyter labextension install kubeflow-kale-labextension
 
+COPY requirements.txt .
 RUN pip3 install --requirement requirements.txt
-COPY . .
-USER miuser
 
 VOLUME ["/shared_volume"]
 
@@ -41,4 +39,3 @@ WORKDIR /
 ENV NB_PREFIX opturl
 
 ENTRYPOINT ["/usr/local/bin/jupyter", "lab", "--ip=0.0.0.0", "--no-browser", "--allow-root", "--LabApp.allow_origin='*'", "--LabApp.base_url=opturl"]
-
