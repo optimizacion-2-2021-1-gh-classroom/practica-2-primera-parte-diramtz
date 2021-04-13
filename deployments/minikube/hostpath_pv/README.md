@@ -38,32 +38,9 @@ Create deployment:
 kubectl create -f $OPT_URL/hostpath_pv/$OPT_JUPYTERLAB_SERVICE.yaml
 ```
 
-To check set:
-
+And after 3 mins go to:
 ```
-OPT_LOAD_BALANCER_SERVICE=$(echo $OPT_LOAD_BALANCER_SERVICE|sed -n 's/\./-/g;s/_/-/g;p')
-OPT_JUPYTERLAB_SERVICE=$(echo $OPT_JUPYTERLAB_SERVICE|sed -n 's/\./-/g;s/_/-/g;p')
-```
-
-Describe:
-
-```
-kubectl describe service -n kubeflow $OPT_LOAD_BALANCER_SERVICE
-kubectl describe pv -n kubeflow $OPT_PV
-kubectl describe pvc -n kubeflow $OPT_PVC
-kubectl describe deployment -n kubeflow $OPT_JUPYTERLAB_SERVICE
-```
-
-Describe all pods:
-
-```
-kubectl describe pods -n kubeflow
-```
-
-Scale: (if created automatically scale is 1)
-
-```
-kubectl scale deployment -n kubeflow $OPT_JUPYTERLAB_SERVICE --replicas=<0 or 1>
+http://<ipv4 of ec2 instance>:30001/opturl
 ```
 
 Delete:
