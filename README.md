@@ -4,11 +4,13 @@
 
 | Integrante | User | Tarea |
 |---------------|-------|---------|
-| Ana | @AnaTorresR | (pendiente) |
-| Iván | @IvanSalgadoVel |  (pendiente) |
-| Dira | @diramtz | (pendiente) |
-| León| | (pendiente)|
+| Ana | @AnaTorresR | Levantar los servicios de minikube, kale y kubeflow y lanzamientos con diferentes valores|
+| Iván | @IvanSalgadoVel |Levantar los servicios de minikube, kale y kubeflow y lanzamientos con diferentes valores|
+| Dira | @diramtz | Levantar los servicios de minikube, kale y kubeflow y lanzamientos con diferentes valores|
+| León| @lgarayva| Levantar los servicios de minikube, kale y kubeflow, lanzamientos con diferentes valores y lanzamientos con diferentes valores|
 
+
+**Nota: No se encontraron errores en el paquete** 
 
 ### [Minikube y AWS](https://github.com/ITAM-DS/analisis-numerico-computo-cientifico/wiki/1.1.Configuracion-de-servicios-basicos-para-uso-de-AWS)
 
