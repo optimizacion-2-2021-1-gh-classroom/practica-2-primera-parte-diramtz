@@ -71,11 +71,9 @@ all must be with status "Running" (and one with "Completed")
 
 To access kubeflow UI set:
 
-``
-export INGRESS_HOST=$(minikube ip)
-export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="http2")].nodePort}')
+          export INGRESS_HOST=$(minikube ip)
+          export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="http2")].nodePort}')
 
-``
 Retrieve port
 
 ``echo $INGRESS_PORT``
