@@ -33,6 +33,7 @@ And after 3 mins go to:
 ```
 http://<ipv4 of ec2 instance>:30001/opturl
 ```
+all must be with status "Running" (and one with "Completed")
 
 Delete:
 
