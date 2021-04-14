@@ -26,19 +26,17 @@ Select AMI: `opt2-aws-educate-17-03-2021`
 
 Use next bash script in User data:
 
-``
-#!/bin/bash
-##variables:
-region=us-east-1 #make sure instance is in Virginia
-name_instance=minikube
-##System update
-apt-get update -yq
-##Tag instance
-INSTANCE_ID=$(curl -s http://instance-data/latest/meta-data/instance-id)
-PUBLIC_IP=$(curl -s http://instance-data/latest/meta-data/public-ipv4)
-aws ec2 create-tags --resources $INSTANCE_ID --tag Key=Name,Value=$name_instance-$PUBLIC_IP --region=$region
+     #!/bin/bash
+     ##variables:
+    region=us-east-1 #make sure instance is in Virginia
+    name_instance=minikube
+    ##System update
+    apt-get update -yq
+    ##Tag instance
+    INSTANCE_ID=$(curl -s http://instance-data/latest/meta-data/instance-id)
+    PUBLIC_IP=$(curl -s http://instance-data/latest/meta-data/public-ipv4)
+    aws ec2 create-tags --resources $INSTANCE_ID --tag Key=Name,Value=$name_instance-$PUBLIC_IP --region=$region
 
-``
 **Third step**
 
 ssh to instance:
@@ -86,4 +84,4 @@ And go to:
 
 ``http://<ipv4 of ec2 instance>:$INGRESS_PORT``
 
-->Enable port ``$INGRESS_PORT in security groups
+->Enable port `$INGRESS_PORT` in security groups
