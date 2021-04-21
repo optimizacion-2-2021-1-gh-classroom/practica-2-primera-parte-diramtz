@@ -1,3 +1,3 @@
-ffmaxflow==0.0.2
-matplotlib==3.3.4
-networkx==2.5
+ffmaxflow
+matplotlib
+networkx
