@@ -37,6 +37,6 @@ VOLUME ["/shared_volume"]
 
 WORKDIR /
 
-ENV NB_PREFIX ffmaxflow
+ENV NB_PREFIX opt_url
 
 ENTRYPOINT ["/usr/local/bin/jupyter", "lab", "--ip=0.0.0.0", "--no-browser", "--allow-root", "--LabApp.allow_origin='*'", "--LabApp.base_url=opturl"]
