@@ -31,7 +31,7 @@ kubectl create -f $OPT_URL/hostpath_pv/$OPT_JUPYTERLAB_SERVICE.yaml
 
 And after 3 mins go to:
 ```
-http://<ipv4 of ec2 instance>:30001/opturl
+http://<ipv4 of ec2 instance>:30001/ffmaxflow
 ```
 all must be with status "Running" (and one with "Completed")
 

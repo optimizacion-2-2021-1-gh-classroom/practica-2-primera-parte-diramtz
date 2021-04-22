@@ -30,6 +30,7 @@ RUN jupyter labextension install kubeflow-kale-labextension
 
 #RUN pip install --quiet "git+https://github.com/ITAM-DS/analisis-numerico-computo-cientifico.git#egg=opt&subdirectory=src"
 COPY requirements.txt .
+#RUN pip3 install numpy
 RUN pip3 install --requirement requirements.txt
 COPY . .
 
@@ -37,6 +38,6 @@ VOLUME ["/shared_volume"]
 
 WORKDIR /
 
-ENV NB_PREFIX opturl
+ENV NB_PREFIX ffmaxflow
 
-ENTRYPOINT ["/usr/local/bin/jupyter", "lab", "--ip=0.0.0.0", "--no-browser", "--allow-root", "--LabApp.allow_origin='*'", "--LabApp.base_url=opturl"]
+ENTRYPOINT ["/usr/local/bin/jupyter", "lab", "--ip=0.0.0.0", "--no-browser", "--allow-root", "--LabApp.allow_origin='*'", "--LabApp.base_url=ffmaxflow"]
