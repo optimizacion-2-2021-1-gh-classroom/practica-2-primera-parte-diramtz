@@ -9,6 +9,7 @@
 | Dira | @diramtz | Levantar los servicios de minikube, kale y kubeflow y lanzamientos con diferentes valores|
 | León| @lgarayva| Levantar los servicios de minikube, kale y kubeflow, lanzamientos con diferentes valores y lanzamientos con diferentes valores|
 
+Recrea nuestros experimentos dando click en este botón de [Binder](https://mybinder.org/v2/gh/optimizacion-2-2021-1-gh-classroom/practica-2-primera-parte-diramtz.git/HEAD)
 
 **Nota: No se encontraron errores en el paquete** 
 
