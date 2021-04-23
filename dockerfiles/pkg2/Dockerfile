@@ -30,7 +30,7 @@ RUN jupyter labextension install kubeflow-kale-labextension
 
 #RUN pip install --quiet "git+https://github.com/ITAM-DS/analisis-numerico-computo-cientifico.git#egg=opt&subdirectory=src"
 COPY requirements.txt .
-#RUN pip3 install numpy
+##RUN pip3 install numpy
 RUN pip3 install --requirement requirements.txt
 COPY . .
 
