@@ -2,3 +2,8 @@ ffmaxflow
 numpy
 matplotlib
 networkx
+pytest
+line-profiler
+memory_profiler
+psutil
+Cython
