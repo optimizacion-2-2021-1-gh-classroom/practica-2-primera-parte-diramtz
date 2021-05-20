@@ -7,3 +7,4 @@ line-profiler
 memory_profiler
 psutil
 Cython
+pandas
